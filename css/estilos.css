@@ -6,11 +6,16 @@
     font-weight: normal;
 }
 
-h4, .servicios p, .sobremi p, .testimonios p {
+h4,
+.servicios p,
+.sobremi p,
+.testimonios p {
     color: #01a5da;
 }
 
-h1, h2, h6 {
+h1,
+h2,
+h6 {
     text-shadow:
         -2px -1px 0 lightblue,
         -1px -1px 0 lightblue,
@@ -20,13 +25,13 @@ h1, h2, h6 {
 }
 
 @font-face {
- 
+
     font-family: 'Anton-Regular';
     src: url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.woff') format('woff'),
         url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.svg#Anton-Regular') format('svg'),
         url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.eot'),
         url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.eot?#iefix') format('embedded-opentype');
-         font-display: swap;
+    font-display: block;
 }
 
 @font-face {
@@ -283,7 +288,7 @@ header {
 .caja-servicios {
 
     color: #253f5b;
-    background-image: linear-gradient(rgba(240, 240, 241,0.062), rgba(240, 240, 241, 0.5)), url("../img/fondo.webp");
+    background-image: linear-gradient(rgba(240, 240, 241, 0.062), rgba(240, 240, 241, 0.5)), url("../img/fondo.webp");
     background-position: 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -584,13 +589,23 @@ header {
 
 .comentarios {
     position: relative;
-    max-width: 100%;
+    max-width: 95%;
     display: none;
-    max-height: 700px; 
+    max-height: 700px;
     overflow-y: auto;
     overflow-x: hidden;
     left: 50%;
-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.fb-comments {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fb-comments>div {
+    width: 100% !important;
 }
 
 
@@ -848,7 +863,9 @@ transform: translateX(-50%);
 
 }
 
-.card-ovelar>h1, .card-ovelar>h4, .card-ovelar>h6 {
+.card-ovelar>h1,
+.card-ovelar>h4,
+.card-ovelar>h6 {
     color: white;
 }
 
@@ -1092,9 +1109,9 @@ transform: translateX(-50%);
     text-align: center;
     font-size: 2.8vw;
     text-decoration: none;
-  left: 90%;
+    left: 90%;
     border-radius: 50%;
- 
+
     width: 1.2em;
     height: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
@@ -1456,14 +1473,15 @@ transform: translateX(-50%);
     .testimonios h2 {
         font-size: 1.9em;
     }
-    .videos-testimonios{
-        top:9%;
+
+    .videos-testimonios {
+        top: 9%;
     }
 
     .contenedor-testimonios {
         top: 95%;
         width: 99%;
-       padding:1%;
+        padding: 1%;
         gap: 3px;
 
     }
@@ -1500,10 +1518,12 @@ transform: translateX(-50%);
         top: -2%;
         left: 66%;
     }
-/*comentarios*/
-#toggleComments {
-    font-size: 1.2em;
-}
+
+    /*comentarios*/
+    #toggleComments {
+        font-size: 1.2em;
+    }
+
     /*encuentrame*/
     .contacto h2 {
         font-size: 1.9em;
@@ -2048,7 +2068,8 @@ transform: translateX(-50%);
     .caja-testimonios p {
         font-size: 1em;
     }
-/*comentarios*/
+
+    /*comentarios*/
 
     /*contacto */
 
@@ -2692,8 +2713,9 @@ transform: translateX(-50%);
         top: 50%;
         width: 100%;
     }
+
     .botonarriba a {
-        width:12%;
+        width: 12%;
     }
 }
 
@@ -2838,6 +2860,7 @@ transform: translateX(-50%);
     .botonarriba a {
         font-size: 2em;
     }
+
     #toggleComments {
         font-size: 0.9em;
     }
@@ -2916,11 +2939,17 @@ transform: translateX(-50%);
 
     /*principal*/
     header {
-        height: 11vh;
+        height: 9vh;
     }
 
     .menu-icon {
-        top: 3%;
+        top: 2%;
+        right: 2%;
+    }
+
+    .bar {
+        width: 28px;
+        height: 3px;
     }
 
     .logo {
@@ -2963,7 +2992,8 @@ transform: translateX(-50%);
     .sobremifoto {
         width: 37%;
     }
-/*comentarios*/
+
+    /*comentarios*/
 
 
     /*testimonios*/
@@ -2980,7 +3010,7 @@ transform: translateX(-50%);
     }
 
     .contenedor-testimonios {
-        width: 85%;
+        width: 65%;
     }
 
     .card-ovelar p {
@@ -3116,7 +3146,8 @@ transform: translateX(-50%);
     .testimonios h2 {
         font-size: 1em;
     }
-/*comentarios*/
+
+    /*comentarios*/
 
     /*contacto*/
     .contacto_locales {
