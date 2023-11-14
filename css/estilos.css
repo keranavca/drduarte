@@ -2994,7 +2994,12 @@ header {
     }
 
     /*comentarios*/
+    .fb-comments {
+        width: 100%;
+        left: 1% !important;
+       
 
+    }
 
     /*testimonios*/
 
