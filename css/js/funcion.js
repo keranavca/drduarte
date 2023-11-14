@@ -1,22 +1,23 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 768) {
         var menuAbierto = false;
         var menuButton = document.querySelector('.menu-icon, .menu');
         var mobileMenu = document.querySelector('.menu');
         var navLinks = document.querySelectorAll('.menu a');
-
+    
         menuButton.addEventListener('touchstart', toggleMenu);
-
+    
         navLinks.forEach(function (link) {
             link.addEventListener('touchend', closeMenu);
         });
-
+    
         window.addEventListener('click', function (event) {
             if (menuAbierto && event.target !== menuButton && !menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
                 closeMenu();
             }
         });
-
+    
         function toggleMenu() {
             if (!menuAbierto) {
                 openMenu();
@@ -24,21 +25,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 closeMenu();
             }
         }
-
+    
         function openMenu() {
             mobileMenu.style.display = 'block';
             menuAbierto = true;
         }
-
+    
         function closeMenu() {
             // Espera 300 ms antes de cerrar el menú
-            setTimeout(function() {
+            setTimeout(function () {
                 mobileMenu.style.display = 'none';
                 menuAbierto = false;
             }, 200);
         }
     
-        }
+    }
+
 
     //funcion de aparicion de elementos de la pagina al realizar el scroll
     const elementosParaAparecer = document.querySelectorAll('.caja-servicios-padre,.contacto_locales, .sobremi, .sobremi div, .testimonios section, .testimonios div,.contacto h2, .contacto h5, .contacto div ');
@@ -102,40 +104,43 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollContainer.scrollLeft += 100; // Ajusta la cantidad de desplazamiento
     });
 
-    //función para cargar el mapa solo cuando esté en la sección correspondiente 
-    const mapFrames = document.querySelectorAll('.mapa-ovelar, .mapa');
-    let mapsLoaded = new Array(mapFrames.length).fill(false);
 
-    function loadMap(i) {
-        if (!mapsLoaded[i]) {
-            mapFrames[i].src = mapFrames[i].getAttribute("data-src");
-            mapsLoaded[i] = true;
+
+
+    //funcion para mostrar u ocultar boton de comentarios
+    // Obtiene referencias a los elementos del DOM
+    var toggleButton = document.getElementById("toggleComments");
+    var commentsSection = document.getElementById("comentarios");
+    // Agrega un evento de clic al botón
+    toggleButton.addEventListener("click", function () {
+        // Cambia la visibilidad de la sección de comentarios
+        if (commentsSection.style.display === "none" || commentsSection.style.display === "") {
+            commentsSection.style.display = "block"; // Muestra la sección
+        } else {
+            commentsSection.style.display = "none"; // Oculta la sección
         }
-    }
-    
-    window.addEventListener("scroll", function () {
-        mapFrames.forEach((mapFrame, i) => {
-            const rect = mapFrame.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom >= 0 && !mapsLoaded[i]) {
-                loadMap(i);
-                console.log("El código JavaScript se ejecutó correctamente.");
-            }
-        });
     });
+
+
 });
 
 
-//funcion para mostrar u ocultar boton de comentarios
-// Obtiene referencias a los elementos del DOM
-var toggleButton = document.getElementById("toggleComments");
-var commentsSection = document.getElementById("comentarios");
+//función para cargar el mapa solo cuando esté en la sección correspondiente 
+const mapFrames = document.querySelectorAll('.mapa-ovelar, .mapa');
+let mapsLoaded = new Array(mapFrames.length).fill(false);
 
-// Agrega un evento de clic al botón
-toggleButton.addEventListener("click", function() {
-    // Cambia la visibilidad de la sección de comentarios
-    if (commentsSection.style.display === "none" || commentsSection.style.display === "") {
-        commentsSection.style.display = "block"; // Muestra la sección
-    } else {
-        commentsSection.style.display = "none"; // Oculta la sección
+function loadMap(i) {
+    if (!mapsLoaded[i]) {
+        mapFrames[i].src = mapFrames[i].getAttribute("data-src");
+        mapsLoaded[i] = true;
     }
+}
+
+window.addEventListener("scroll", function () {
+    mapFrames.forEach((mapFrame, i) => {
+        const rect = mapFrame.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0 && !mapsLoaded[i]) {
+            loadMap(i);
+        }
+    });
 });
