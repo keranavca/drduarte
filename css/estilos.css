@@ -167,9 +167,9 @@ header {
     color: #1870ad;
     text-shadow:
         -2px -1px 0 lightblue,
-        -1px -1px 0 black,
-        -1px -1px 0 black,
-        -1px -1px 0 black;
+        -1px -1px 0 lightblue,
+        -1px -1px 0 lightblue,
+        -1px -1px 0 lightblue;
 }
 
 .textointro {
