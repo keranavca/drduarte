@@ -1,0 +1,3172 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Anton-Regular;
+    font-weight: normal;
+}
+
+h4, .servicios p, .sobremi p, .testimonios p {
+    color: #01a5da;
+}
+
+h1, h2, h6 {
+    text-shadow:
+        -2px -1px 0 lightblue,
+        -1px -1px 0 lightblue,
+        -1px -1px 0 lightblue,
+        -1px -1px 0 lightblue;
+    color: #1870ad;
+}
+
+@font-face {
+ 
+    font-family: 'Anton-Regular';
+    src: url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.woff') format('woff'),
+        url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.svg#Anton-Regular') format('svg'),
+        url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.eot'),
+        url('/font/webfonts_Anton-Regular/Anton-Regular.ttf.eot?#iefix') format('embedded-opentype');
+         font-display: swap;
+}
+
+@font-face {
+    font-family: code-pro;
+    src: url('/font/codebolt.otf'), url('/font/codelight.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    background-color: #f1f1f2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 5px 5px 4px #cfcfd0;
+    height: 15vh;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    width: 7%;
+    top: 1%;
+}
+
+.logo img {
+    position: absolute;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0.1vw 0.1vw 8px whitesmoke;
+    z-index: 1;
+
+}
+
+.logo img:hover {
+    border: 1px solid lightseagreen;
+}
+
+.enlaces-redes {
+    position: absolute;
+    width: 18%;
+    margin-left: 3vw;
+    display: inline;
+    left: 5%;
+
+    top: 30%;
+}
+
+.enlaces-redes ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.enlaces-redes li {
+    width: 15%;
+    list-style-type: none;
+
+}
+
+.enlaces-redes a {
+    display: flex;
+    text-decoration: none;
+    padding: 0.5vw;
+
+}
+
+.img-redes {
+    width: 100%;
+}
+
+.img-redes:hover {
+    border: 1px solid lightskyblue;
+    border-radius: 10%;
+
+
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    right: 5%;
+    top: 38%;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 3vw;
+
+}
+
+.menu a {
+    color: #1870ad;
+    text-decoration: none;
+    padding: 8px 8px;
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.menu a:hover {
+    border-top: 0.2vw solid #01a5da;
+    transition: 0.2s ease-in;
+    color: #01a5da;
+    text-shadow: 0 0 3px white, 0 0 10px whitesmoke;
+}
+
+
+
+.principal {
+    position: relative;
+    /* padding: 21.4%; */
+    height: 100vh;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.6), rgba(240, 240, 241, 0.6)), url("../img/fondoblanco.webp");
+    border-bottom: 0.1vw solid gray;
+
+}
+
+.borderletra {
+    color: #1870ad;
+    text-shadow:
+        -2px -1px 0 lightblue,
+        -1px -1px 0 black,
+        -1px -1px 0 black,
+        -1px -1px 0 black;
+}
+
+.textointro {
+    text-align: center;
+    font-size: 2.4vw;
+    position: absolute;
+    top: 18%;
+    left: 1%;
+
+}
+
+.principal h2 {
+    font-size: 1em;
+}
+
+.principal p {
+    color: #01a5da;
+    text-align: left;
+    text-indent: 80px;
+    font-size: 1.7vw;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    width: 60%;
+}
+
+.ftperfil {
+    position: absolute;
+    top: 21%;
+    right: 6%;
+    width: 25%;
+    border-radius: 110%;
+    border: 5px solid whitesmoke;
+    box-shadow: 5px 5px 25px #253e5c;
+    visibility: hidden;
+}
+
+.vpresentacion {
+    position: absolute;
+    top: 9%;
+    right: 6%;
+    border-radius: 5%;
+    width: 28%;
+    box-shadow: 5px 5px 15px #0F3052;
+    border: 2px outset #0F3052;
+    height: auto;
+}
+
+/*servicios*/
+
+.servicios {
+    position: relative;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.4), rgba(240, 240, 241, 0.4)), url("../img/fondoblanco.webp");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.textoservicio {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 2.3vw;
+    width: 100%;
+    padding-top: 1%;
+    margin-bottom: 5%;
+
+}
+
+.textoservicio h4 {
+    font-size: 1.7vw;
+}
+
+.caja-servicios-padre {
+    position: absolute;
+    top: 38%;
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.3vw;
+    flex-wrap: wrap;
+
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 0.5s;
+    /* Agregar transición para suavizar la aparición */
+
+}
+
+.caja-servicios-padre.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.caja-servicios {
+
+    color: #253f5b;
+    background-image: linear-gradient(rgba(240, 240, 241,0.062), rgba(240, 240, 241, 0.5)), url("../img/fondo.webp");
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(59, 56, 56, 0.3);
+    box-shadow: 5px 5px 4px rgba(59, 56, 56, 0.8);
+    width: 17vw;
+    text-align: left;
+    line-height: 2vw;
+    border-radius: 2%;
+    font-size: 1.4vw;
+    padding: 0.9%;
+}
+
+.caja-servicios h5 {
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 1.5vw;
+    text-indent: 0px;
+    color: #1870ad;
+    width: 100%;
+
+}
+
+/* Definir una animación llamada 'intermitente' */
+@keyframes intermitente {
+    0% {
+        opacity: 0;
+    }
+
+    /* El texto está invisible al principio */
+    50% {
+        opacity: 1;
+    }
+
+    /* El texto se hace visible a la mitad de la animación */
+    100% {
+        opacity: 0;
+    }
+
+    /* El texto vuelve a estar invisible al final */
+}
+
+/* Aplicar la animación a un elemento con la clase 'texto-intermitente' */
+.texto-intermitente {
+    animation: intermitente 1.3s ease-in-out infinite;
+}
+
+.caja-servicios-padre a {
+    text-decoration: none;
+}
+
+.caja-servicios p {
+    font-size: 0.8em;
+}
+
+.caja-servicios:hover {
+    border: 1px solid whitesmoke;
+    box-shadow: 5px 5px 15px rgba(18, 43, 110, 0.8);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+/*acerca de mi*/
+
+.sobremi {
+    height: 100vh;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.5), rgba(240, 240, 241, 0.5)), url("../img/fondoblanco.webp");
+    background-size: cover;
+    background-position: 0%;
+    color: #253f5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.sobremi h2 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 3.2vw;
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    margin-bottom: 80px;
+    /* Inicialmente oculto */
+    transition: opacity 0.5s;
+    /* Agregar transición para suavizar la aparición */
+}
+
+.titulo.visible {
+    opacity: 1;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    text-align: left;
+    font-size: 1.5vw;
+    top: 16%;
+    text-indent: 3vw;
+    position: absolute;
+    right: 5%;
+
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    text-align: left;
+    font-size: 1.5vw;
+    top: 30%;
+    text-indent: 3vw;
+    position: absolute;
+    right: 5%;
+
+}
+
+.p3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    text-align: left;
+    font-size: 1.5vw;
+    top: 48%;
+    text-indent: 3vw;
+    position: absolute;
+    right: 5%;
+
+}
+
+.sobremifoto {
+    position: absolute;
+    display: flex;
+    width: 22%;
+    left: 6%;
+    top: 13%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px #415d99;
+
+}
+
+.excelencia {
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 0.5s;
+    /* Agregar transición para suavizar la aparición */
+}
+
+.excelencia.visible {
+    opacity: 1;
+}
+
+.excelencia p {
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-indent: 2vw;
+    font-size: 1.5vw;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    top: 63%;
+
+
+}
+
+
+
+/*testimonios*/
+.testimonios {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.5), rgba(240, 240, 241, 0.5)), url("../img/fondoblanco.webp");
+    background-size: cover;
+    background-position: 0%;
+    color: #253f5b;
+}
+
+.testimonios h2 {
+    font-size: 3em;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.videos-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 1em;
+    background-color: #f1f1f2;
+    border: 0.3em dashed #253e5c;
+    border-radius: 1em;
+
+
+}
+
+.videos-testimonios.visible {
+    opacity: 1;
+}
+
+.vd-t {
+    width: 26%;
+    height: 20%;
+    border-radius: 1em;
+    box-shadow: 5px 5px 15px #253f5b;
+}
+
+.contenedor-testimonios {
+    position: absolute;
+    background-color: whitesmoke;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.contenedor-testimonios.visible {
+    opacity: 1;
+}
+
+.caja-testimonios {
+    border: 2px dashed #0F3052;
+    box-shadow: 5px 5px 15px #0F3052;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1%;
+    border-radius: 1.3em;
+    margin: 0 auto;
+
+}
+
+.caja-testimonios h3 {
+    color: #1870ad;
+}
+
+/*comentarios*/
+.btncomments {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1%;
+
+}
+
+#toggleComments {
+    font-size: 1.5em;
+    padding: 0.3%;
+    color: #1870ad;
+    height: auto;
+    background-color: #f1f1f2;
+    border: 1px outset #253e5c;
+    box-shadow: 3px 3px 10px #1870ad;
+    border-radius: 0.5em;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#toggleComments:hover {
+    color: #f1f1f2;
+    background-color: #1870ad;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.comentarios {
+    position: relative;
+    max-width: 100%;
+    display: none;
+    max-height: 700px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 50%;
+transform: translateX(-50%);
+}
+
+
+/*contacto*/
+
+.contacto {
+    height: 100vh;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.5), rgba(240, 240, 241, 0.5)), url("../img/fondoblanco.webp");
+    background-size: cover;
+    background-position: 0%;
+    color: #01a5da;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.contacto a {
+    color: #1870ad;
+}
+
+.contacto h2 {
+    position: absolute;
+    top: 7%;
+    margin: 0 auto;
+    width: 55%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.contacto h2.visible {
+    opacity: 1;
+}
+
+.contacto h5 {
+    text-indent: 4vw;
+    position: absolute;
+    top: 17%;
+    width: 45%;
+    left: 4%;
+    text-align: center;
+    font-size: 1.4vw;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.contacto h5.visible {
+    opacity: 1;
+}
+
+/*consulta a domicilio */
+.condomicilio {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 33%;
+    position: absolute;
+    left: calc(100% - 82.5%);
+    border: 2px solid #253f5b;
+    background-color: #f1f1f2;
+    border-radius: 1.5em;
+    width: 19%;
+    padding: 1em;
+    height: 8%;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.condomicilio.visible {
+    opacity: 1;
+}
+
+.teleconsultas {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 43%;
+    position: absolute;
+    left: calc(100% - 82.5%);
+    border: 2px solid #253f5b;
+    background-color: #f1f1f2;
+    border-radius: 1.5em;
+    width: 19%;
+    padding: 1em;
+    height: 8%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.teleconsultas.visible {
+    opacity: 1;
+}
+
+.condomicilio img {
+    width: 11%;
+    float: left;
+    padding-bottom: 12px;
+}
+
+.teleconsultas img {
+    width: 11%;
+    padding-bottom: 12px;
+}
+
+.condomicilio p {
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.teleconsultas p {
+    font-size: 0.7em;
+    width: 83%;
+}
+
+.condomicilio:hover,
+.condomicilio p:hover,
+.teleconsultas:hover,
+.teleconsultas p:hover {
+    color: #f1f1f2;
+    background-color: #1870ad;
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 2px 2px 5px #25454f;
+    cursor: pointer;
+    border-color: cadetblue;
+}
+
+.mapa {
+    position: absolute;
+    margin: 0 auto;
+    right: 5%;
+    top: 4vw;
+    height: 40vh;
+    width: 40%;
+    border-radius: 2.5rem;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px #253f5b
+}
+
+/* cadena de contacto de las sucursales*/
+.telefonos-padre {
+    position: absolute;
+    height: auto;
+    top: 70%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.titulo-padre {
+    position: absolute;
+    width: 100%;
+    font-size: 3.3rem;
+    top: 58%;
+    color: #1870ad;
+    margin: 0 auto;
+}
+
+.contacto_locales {
+    position: relative;
+    border-radius: 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    display: inline-block;
+    opacity: 0;
+    border-radius: 2em;
+    /* Inicialmente oculto */
+    transition: opacity 0.5s;
+    overflow-x: auto;
+    /* Agregar transición para suavizar la aparición */
+}
+
+.contacto_locales.visible {
+    opacity: 1;
+    /* Mostrar cuando se aplica la clase 'visible' */
+}
+
+.contacto_locales ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: normal;
+}
+
+.contacto_locales li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0;
+    width: 55%;
+    margin: 0 auto;
+    height: auto;
+    display: inline-block;
+    align-items: center;
+    border: 2px solid #253f5b;
+    background-color: #f1f1f2;
+    box-shadow: 5px 5px 15px rgba(37, 63, 91, 0.8);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    gap: 8px;
+    text-align: center;
+    white-space: normal;
+}
+
+.contacto_locales img {
+    width: 40%;
+    border-radius: 0.6rem;
+}
+
+.contacto_locales p {
+    text-decoration-line: none;
+    font-size: 1.1VW;
+    text-align: center;
+}
+
+.contacto_locales ul li {
+    list-style-type: none;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: whitesmoke;
+
+}
+
+.contacto_locales li:hover {
+    background-color: #1870ad;
+    color: white;
+}
+
+/*recuadro de los contactos*/
+.card-ovelar {
+    color: #f1f1f2;
+    display: block;
+    position: absolute;
+    left: calc(100% - 80%);
+    background-color: #0F3052;
+    box-shadow: 5px 5px 4px rgba(59, 56, 56, 0.3);
+    width: 60%;
+    top: 5%;
+    border: 2px solid #415d99;
+    border-radius: 2.5em;
+    height: 64%;
+    z-index: 99;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+
+}
+
+.card-ovelar>h1, .card-ovelar>h4, .card-ovelar>h6 {
+    color: white;
+}
+
+/*fondo para las tarjetas de contacto*/
+.card1 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/sovelar.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/scarlos.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/ssemic.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card4 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/scemedica.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card5 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/sservimed.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card6 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/scmg.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card7 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/scverde2.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.card8 {
+    background-image: linear-gradient(rgba(12, 7, 5, 0.6), rgba(12, 7, 5, 0.6)), url("../img/fondocard/senciso.webp");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.ciudad {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 33%;
+    gap: 3px;
+    line-height: 1.5vw;
+    height: 10%;
+
+}
+
+
+.titulooviedo {
+    position: absolute;
+    width: 30%;
+    font-size: 1.7rem;
+    top: 1%;
+    left: -2%;
+    text-shadow: none;
+}
+
+.titulocaazapa {
+    position: absolute;
+    width: 30%;
+    font-size: 1.7rem;
+    top: -2%;
+    left: 22.5%;
+    text-shadow: none;
+
+}
+
+.titulocaaguazu {
+    position: absolute;
+    width: 30%;
+    font-size: 1.7rem;
+    top: -1%;
+    left: 42.3%;
+    text-shadow: none;
+
+}
+
+.titulovilla {
+    position: absolute;
+    width: 30%;
+    font-size: 1.7rem;
+    top: 1%;
+    right: 4%;
+    text-shadow: none;
+}
+
+.contacto h6 {
+    text-decoration: underline;
+}
+
+.villarrica {
+    width: 50%;
+    line-height: 1.4vw;
+}
+
+.caazapa {
+    line-height: 2.5vw;
+}
+
+.oviedo {
+    padding-right: 55px;
+    width: 37%;
+}
+
+.caaguazu {
+    line-height: 2.3vw;
+    width: 30%;
+}
+
+.mapa-ovelar {
+    position: absolute;
+    right: 5%;
+    top: 22vh;
+    height: 30vh;
+    width: 45%;
+    border-radius: 1.3em;
+}
+
+.card-ovelar a {
+    position: absolute;
+    top: 63%;
+    left: 14.5%;
+    width: 20%;
+}
+
+.card-ovelar p {
+    padding-bottom: 2em;
+
+    position: absolute;
+    top: 76%;
+    left: 21%;
+    font-size: 0.5em;
+}
+
+.card-ovelar img {
+    width: 30%;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+
+.card-ovelar img:hover {
+    width: 31%;
+    border-color: aquamarine;
+}
+
+.card-ovelar h1 {
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    margin: 0 auto;
+    width: 99%;
+    top: 5%;
+    text-shadow: none;
+}
+
+.card-ovelar h3 {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    text-align: center;
+    font-size: 0.7em;
+    width: 20%;
+}
+
+.card-ovelar h4 {
+    position: absolute;
+    top: 51%;
+    left: 1%;
+    text-align: left;
+    font-size: 0.6em;
+    text-align: center;
+    width: 45%;
+}
+
+.card-ovelar h6 {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    font-size: 0.7em;
+    margin: 0 auto;
+    width: 98%;
+    text-shadow: none;
+}
+
+
+/*footer*/
+.piepagina {
+
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 3vw;
+    background-color: #f1f1f2;
+    border: 1px solid #cfcfd0;
+    text-shadow: none;
+}
+
+.piepagina h6 {
+    text-shadow: none;
+
+}
+
+.botonarriba {
+    border-radius: 50%;
+    position: sticky;
+    text-align: center;
+    left: 90%;
+    top: 90%;
+    z-index: 100;
+    transition: 200ms;
+}
+
+.botonarriba a {
+    position: absolute;
+    color: white;
+    background-color: #1870ad;
+    text-align: center;
+    font-size: 2.8vw;
+    text-decoration: none;
+  left: 90%;
+    border-radius: 50%;
+ 
+    width: 1.2em;
+    height: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 45;
+    padding-top: 1.3vh;
+    opacity: 0.7;
+}
+
+.botonarriba a:hover {
+    color: aqua;
+    border: 1px dotted lightseagreen;
+    box-shadow: 2px 2px 10px lightskyblue;
+}
+
+/* pagina responsive*/
+
+@media screen and (max-width:1670px) {
+
+    /*inicio*/
+    .principal p {
+        text-indent: 70px;
+        font-size: 1.5vw;
+        top: 55%;
+    }
+
+    .ftperfil {
+        top: 24%;
+        right: 12%;
+
+    }
+
+    /*servicios*/
+    .textoservicio {
+        font-size: 3vw;
+        width: 100%;
+        padding-top: 0.1%;
+
+    }
+
+    .caja-servicios-padre {
+
+        margin-top: -2vw;
+        flex-wrap: wrap;
+
+    }
+
+    /*acerca de mi*/
+    .titulo {
+        margin-top: 1vw;
+    }
+
+    .titulo p {
+        position: absolute;
+    }
+
+    .sobremifoto {
+        top: 18%;
+        width: 18%;
+    }
+
+
+}
+
+
+@media screen and (max-width:1450px) {
+
+    /*inicio*/
+    .logo {
+        width: 7%;
+    }
+
+    .enlaces-redes {
+        width: 22%;
+    }
+
+    .principal p {
+        text-indent: 60px;
+        font-size: 1.5vw;
+        top: 40%;
+
+    }
+
+
+
+    /*servicios*/
+
+    .textoservicio {
+        font-size: 2.3vw;
+        width: 100%;
+        padding-top: 1%;
+
+    }
+
+    .caja-servicios-padre {
+
+        margin-top: 3vw;
+        flex-wrap: wrap;
+
+
+    }
+
+    /*acerca de mi*/
+
+
+    /*testimoinos*/
+    .testimonios h2 {
+        font-size: 2.3em;
+    }
+
+    .videos-testimonios {
+        width: 48%;
+        top: 10%;
+        border: 4px dashed #0F3052;
+    }
+
+    .sobremifoto {
+        width: 22%;
+    }
+
+    .contenedor-testimonios {
+        width: 90%;
+        height: 30%;
+        top: 88%;
+        gap: 3px;
+    }
+
+    .caja-testimonios {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    /*contacto*/
+    .titulo-padre {
+        font-size: 1.4em;
+    }
+
+    .con {
+        font-size: 0.7em;
+    }
+
+    .botonarriba a {
+        width: 4%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:1367px) {
+
+    .menu a {
+        font-size: 1.3em;
+    }
+
+    /*inicio*/
+    .textointro {
+        top: 14%;
+        left: 5%;
+        font-size: 2.6em;
+    }
+
+    .principal p {
+        text-indent: 60px;
+        font-size: 1.5vw;
+        top: 40%;
+
+    }
+
+    .vpresentacion {
+        right: 8%;
+        width: 29%;
+    }
+
+    /*servicios*/
+
+    .textoservicio {
+        font-size: 2.5vw;
+        width: 100%;
+        padding-top: 1%;
+    }
+
+    .caja-servicios-padre {
+
+        margin-top: 2vw;
+        flex-wrap: wrap;
+    }
+
+    /*acerca de mi*/
+
+    /*testimonios*/
+    .testimonios h2 {
+        font-size: 2.5em;
+    }
+
+    .videos-testimonios {
+        width: 50%;
+        top: 11%;
+    }
+
+    .contenedor-testimonios {
+
+        width: 100%;
+        height: 33%;
+        padding: 1em;
+        overflow-y: auto;
+        background-color: transparent;
+    }
+
+    .caja-testimonios {
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+    }
+
+    .caja-testimonios p {
+        font-size: 0.8em;
+    }
+
+    /*contactos*/
+    .titulo-padre {
+        font-size: 1.6em;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*menu*/
+    header {
+        position: relative;
+        box-sizing: border-box;
+        height: 18vh;
+        width: 100%;
+
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        width: 10.5%;
+        top: 1%;
+
+    }
+
+    .enlaces-redes {
+        position: absolute;
+        width: 25%;
+        margin-left: 1vw;
+        display: inline;
+        left: 10%;
+        top: 42%;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 1;
+        right: 4%;
+        top: 45%;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-left: 3vw;
+
+    }
+
+    .menu a {
+        color: #1870ad;
+        text-decoration: none;
+        padding: 8px 8px;
+        font-size: 2vw;
+        text-align: left;
+    }
+
+    /*inicio*/
+    .textointro {
+        position: absolute;
+        top: 13%;
+        left: 8%;
+        font-size: 3vw;
+    }
+
+    .principal p {
+        text-indent: 25px;
+        font-size: 2vw;
+        top: 40%;
+        width: 55%;
+        left: 3%;
+    }
+
+    .vpresentacion {
+        top: 12%;
+        width: 33%;
+        height: 55%;
+        right: 6%;
+    }
+
+    /*servicios*/
+
+    .textoservicio {
+        font-size: 2vw;
+        width: 100%;
+        position: absolute;
+        top: 8%;
+
+    }
+
+    .textoservicio h2 {
+        position: absolute;
+        top: 100%;
+
+    }
+
+    .textoservicio h4 {
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+    }
+
+    .caja-servicios-padre {
+        position: absolute;
+        top: 29%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 98%;
+        gap: 2vw;
+        margin: 0 auto;
+
+    }
+
+    .caja-servicios {
+        width: 30%;
+        text-align: left;
+        line-height: 2vw;
+        font-size: 1.9vw;
+        text-align: center;
+
+    }
+
+    .caja-servicios h5 {
+        font-size: 1.9vw;
+    }
+
+    /*acerca de mi*/
+    .titulo p {
+        font-size: 1.1em;
+    }
+
+    .excelencia p {
+        font-size: 1.1em;
+    }
+
+    /*testimonios */
+    .testimonios h2 {
+        font-size: 1.9em;
+    }
+    .videos-testimonios{
+        top:9%;
+    }
+
+    .contenedor-testimonios {
+        top: 95%;
+        width: 99%;
+       padding:1%;
+        gap: 3px;
+
+    }
+
+    .videos-testimonios {
+        width: 70%;
+        gap: 20px;
+        border: 3px dashed #0F3052;
+    }
+
+    .caja-testimonios {
+        width: 110%;
+        height: auto;
+
+    }
+
+    .titulooviedo {
+        top: 1%;
+        left: 2%;
+    }
+
+    .titulocaazapa {
+        top: -2%;
+        left: 38%;
+
+    }
+
+    .titulovilla {
+        top: 1%;
+        left: 100%;
+    }
+
+    .titulocaaguazu {
+        top: -2%;
+        left: 66%;
+    }
+/*comentarios*/
+#toggleComments {
+    font-size: 1.2em;
+}
+    /*encuentrame*/
+    .contacto h2 {
+        font-size: 1.9em;
+    }
+
+    .mapa-ovelar {
+        height: 26vh;
+    }
+
+
+    .botonarriba a {
+        font-size: 2em;
+        width: 4%;
+    }
+
+    /* tarjeta de contactos*/
+    .contacto_locales {
+        width: 85%;
+    }
+
+    .contacto_locales ul {
+        width: 143%;
+    }
+
+    .scroll-right-button {
+        top: 35%;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .scroll-right-button::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #25454f;
+        /* Color del triángulo */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        transition: border-color 0.3s;
+        /* Aplicar transición al color del triángulo */
+    }
+
+    .scroll-right-button:hover::before {
+        border-bottom: 20px solid lightskyblue;
+    }
+
+    .scroll-left-button {
+        top: 35%;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        left: 2.5%;
+        cursor: pointer;
+    }
+
+    .scroll-left-button::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #25454f;
+        /* Color del triángulo */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        transition: border-color 0.3s;
+        /* Aplicar transición al color del triángulo */
+    }
+
+    .scroll-left-button:hover::before {
+        border-bottom: 20px solid lightskyblue;
+    }
+
+    .botonarriba a {
+        width: 4.5%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+
+    /*menu*/
+    header {
+        height: 18.5vh;
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        width: 10.5%;
+        top: 1%;
+
+    }
+
+    .enlaces-redes {
+        position: absolute;
+        width: 26%;
+        margin-left: 1vw;
+        display: inline;
+        left: 10%;
+        top: 40%;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 1;
+        right: 4%;
+        top: 45%;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-left: 3vw;
+
+    }
+
+    .menu a {
+        color: #1870ad;
+        text-decoration: none;
+        padding: 8px 8px;
+        font-size: 2vw;
+        text-align: left;
+    }
+
+    /*inicio*/
+    .textointro {
+        top: 12%;
+        font-size: 2.5vw;
+    }
+
+    .principal p {
+        text-indent: 25px;
+        font-size: 1.8vw;
+        top: 40%;
+        width: 55%;
+        left: 2%;
+    }
+
+    .ftperfil {
+        top: 10%;
+        right: 12%;
+        width: 26%;
+
+    }
+
+    /*servicios*/
+
+    .textoservicio {
+        font-size: 2vw;
+        width: 100%;
+        position: absolute;
+        top: 8%;
+
+    }
+
+    .textoservicio h2 {
+        position: absolute;
+        top: 100%;
+
+    }
+
+    .textoservicio h4 {
+        font-size: 2vw;
+        padding-top: 2vw;
+    }
+
+    .caja-servicios-padre {
+        position: absolute;
+        top: 34%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 98%;
+        gap: 2vw;
+        margin: 0 auto;
+
+    }
+
+    .caja-servicios {
+        width: 30%;
+        text-align: left;
+        line-height: 2vw;
+        font-size: 1.6vw;
+
+    }
+
+    .caja-servicios h4 {
+        font-size: 1.8vw;
+    }
+
+    /*acerca de mi*/
+    .sobremi p {
+        font-size: 1em;
+    }
+
+    /*testimonios*/
+
+    .contenedor-testimonios {
+        top: 93%;
+        width: 100%;
+        height: 33%;
+
+    }
+
+    .videos-testimonios {
+        width: 60%;
+        border: 4px dashed #0F3052;
+        padding: 1%;
+    }
+
+    .caja-testimonios {
+        width: 100%;
+        height: 98%;
+        text-overflow: clip;
+        font-size: 0.8em;
+    }
+
+    /*encuentrame*/
+    .contacto h2 {
+        font-size: 1.9em;
+    }
+
+    .mapa-ovelar {
+        height: 26vh;
+    }
+
+
+    .botonarriba a {
+        font-size: 2em;
+        width: 4%;
+    }
+
+    /* tarjeta de contactos*/
+    .contacto_locales {
+        width: 90%;
+    }
+
+    .contacto_locales ul {
+        width: 143%;
+    }
+
+    .contacto_locales p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /*  .no-animacion {
+        opacity: 1;
+        transition: none;
+    }
+ */
+    /*menu*/
+    header {
+        width: 100%;
+        height: 13vh;
+        z-index: 10;
+    }
+
+    .logo {
+        position: absolute;
+        width: 18%;
+        top: 1%;
+    }
+
+    .enlaces-redes {
+        position: absolute;
+        width: 90%;
+        display: inline;
+        left: 4%;
+        top: 38%;
+    }
+
+    .enlaces-redes a {
+        margin-left: 7vw;
+    }
+
+    /*menu movil */
+    /* Estilos para el icono de menú en pantallas pequeñas */
+    .menu-icon {
+        position: fixed;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 10%;
+        background-color: #f1f1f2;
+        color: #f1f1f2;
+        font-size: 24px;
+        text-align: right;
+        top: 4%;
+        right: 4%;
+        z-index: 90
+    }
+
+    .bar {
+        width: 40px;
+        height: 8px;
+        background-color: #1870ad;
+        margin: 6px 0;
+        z-index: 89;
+    }
+
+    /* Estilos para el menú móvil en pantallas pequeñas */
+    .menu {
+        display: none;
+        position: fixed;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        top: 0.1%;
+        right: 0.1%;
+        z-index: 40;
+
+
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 2vw;
+    }
+
+    .menu li {
+        margin-bottom: 35px;
+        text-align: center;
+        display: block;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #1870ad;
+        font-size: 3.5vw;
+        text-transform: uppercase;
+    }
+
+    .menu a:hover {
+        border-bottom: 0.2vw solid whitesmoke;
+        transition: 0.2s ease-in;
+        color: whitesmoke;
+        text-shadow: 0 0 3px #415d99, 0 0 10px lightseagreen;
+    }
+
+    /*inicio*/
+    .textointro {
+        color: #0F3052;
+        text-align: center;
+        font-size: 2.8em;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 96%;
+    }
+
+    .principal p {
+        text-indent: 25px;
+        font-size: 1.8em;
+        top: 65%;
+        position: absolute;
+        width: 94%;
+        text-align: center;
+    }
+
+    .vpresentacion {
+        width: 96%;
+        height: 40%;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*servicios*/
+
+    .textoservicio {
+        position: absolute;
+        font-size: 1.9em;
+        line-height: 1.2em;
+        width: 100%;
+        top: 7%;
+
+    }
+
+    .textoservicio h4 {
+        font-size: 0.8em;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .caja-servicios-padre {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 3vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 25%;
+        height: 60%;
+    }
+
+    .caja-servicios {
+        width: 80%;
+        text-align: left;
+        line-height: 3.5vw;
+        font-size: 2.9vw;
+
+    }
+
+    .caja-servicios h5 {
+        font-size: 3.5vw;
+    }
+
+
+    /*acerca de mi*/
+    .sobremi {
+        display: flex;
+
+    }
+
+    .titulo h2 {
+        position: absolute;
+        font-size: 6.3vw;
+        width: 80%;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .titulo p {
+        font-size: 1.3em;
+    }
+
+    .p1 {
+        top: 38%;
+        width: 90%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    .p2 {
+        top: 49%;
+        width: 90%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    .p3 {
+        top: 63%;
+        width: 90%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    .excelencia p {
+        position: absolute;
+        font-size: 1.3em;
+        width: 90%;
+        text-align: center;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .sobremifoto {
+        top: 16%;
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*testimonios */
+    .testimonios h2 {
+        width: 80%;
+        font-size: 2.1em;
+        left: 60%;
+        text-align: center;
+        transform: translateX(-60%);
+    }
+
+    .videos-testimonios {
+        width: 83%;
+        padding: 1%;
+        top: 8%;
+        height: 50%;
+        border: 3px dashed #1870ad;
+        overflow-x: auto;
+
+    }
+
+    .vd-t {
+        width: 46%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor-testimonios {
+        display: inline-block;
+        width: 83%;
+        height: 38%;
+
+        top: 92%;
+
+        overflow-x: auto;
+    }
+
+    .caja-testimonios {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        margin-bottom: 15px;
+
+        border: 1px solid green;
+
+    }
+
+    .caja-testimonios h4 {
+        font-size: 1.5em;
+    }
+
+    .caja-testimonios p {
+        font-size: 1em;
+    }
+/*comentarios*/
+
+    /*contacto */
+
+    .contacto h2 {
+        font-size: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 3%;
+    }
+
+    .contacto h5 {
+        left: 50%;
+        top: 12%;
+        transform: translateX(-50%);
+        font-size: 1.5em;
+
+        width: 90%;
+    }
+
+    .condomicilio {
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+
+    .condomicilio p {
+        font-size: 1.6em;
+    }
+
+    .condomicilio img {
+        width: 15%;
+        margin-left: 10px;
+    }
+
+    .teleconsultas {
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+
+    .teleconsultas p {
+        font-size: 1.6em;
+    }
+
+    .teleconsultas img {
+        width: 15%;
+    }
+
+    .mapa {
+        top: 44%;
+        height: 25%;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .titulo-padre {
+        position: absolute;
+        width: 100%;
+        font-size: 2.3rem;
+        top: 70%;
+        margin: 0 auto;
+
+
+    }
+
+    .telefonos-padre {
+        top: 76%;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+
+
+
+    }
+
+    .contacto_locales {
+        position: relative;
+        width: 90%;
+        left: 45%;
+        overflow-y: hidden;
+        transform: translateX(-50%);
+        border-radius: 2em;
+        margin: 0 auto;
+
+        height: 23vh;
+
+
+
+    }
+
+    .contacto_locales ul {
+        overflow: hidden;
+        height: 22vh;
+        gap: 0px;
+        overflow-y: hidden;
+        width: 315%;
+        margin: 0 auto;
+
+    }
+
+    .contacto_locales div {
+        padding: 2%;
+        height: auto;
+    }
+
+    .contacto_locales li {
+        width: 150px;
+        height: 160px;
+    }
+
+    .contacto_locales img {
+        width: 80px;
+        padding-bottom: 10px;
+
+    }
+
+    .contacto_locales p {
+        font-size: 1.8em;
+        line-height: 1.1em;
+    }
+
+    .con {
+        width: auto;
+        font-size: 1.8em;
+        top: 8%;
+    }
+
+    .titulooviedo {
+        left: 25%;
+    }
+
+    .titulocaazapa {
+        left: 94%;
+    }
+
+    .titulocaaguazu {
+        width: 207%;
+    }
+
+    .titulovilla {
+        width: auto;
+        left: 243%;
+    }
+
+    .piepagina {
+        height: 10vh;
+        padding-top: 5%;
+        font-size: 1.8em;
+    }
+
+    .scroll-right-button {
+        top: 35%;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        right: -3%;
+        cursor: pointer;
+    }
+
+    .scroll-right-button::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid #25454f;
+        /* Color del triángulo */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        transition: border-color 0.3s;
+        /* Aplicar transición al color del triángulo */
+    }
+
+    .scroll-right-button:hover::before {
+        border-bottom: 40px solid #415d99;
+    }
+
+    .scroll-left-button {
+        top: 35%;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        left: -3%;
+        cursor: pointer;
+    }
+
+    .scroll-left-button::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid #25454f;
+        /* Color del triángulo */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        transition: border-color 0.3s;
+        /* Aplicar transición al color del triángulo */
+    }
+
+    .scroll-left-button:hover::before {
+        border-bottom: 40px solid #415d99;
+    }
+
+    /*recuadro de los contactos*/
+    .card-ovelar {
+        display: block;
+        position: absolute;
+        background-color: #0F3052;
+        box-shadow: 5px 5px 4px rgba(59, 56, 56, 0.3);
+        width: 100%;
+        top: 3%;
+        left: 0%;
+        transform: translateX(-50%);
+        border: 1px solid #415d99;
+        border-radius: 2.5em;
+        height: 74%;
+        z-index: 99;
+        transform: scale(0);
+        transition: transform 0.5s ease;
+    }
+
+    .card-ovelar h1 {
+        color: whitesmoke;
+        font-size: 3em;
+        position: absolute;
+        margin: 0 auto;
+        width: 99%;
+        top: 5%;
+    }
+
+    .card-ovelar h6 {
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        font-size: 1.9em;
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    .card-ovelar h3 {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 1.9em;
+        width: 20%;
+    }
+
+    .card-ovelar h4 {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        font-size: 1.9em;
+        text-align: center;
+        width: 90%;
+    }
+
+    .mapa-ovelar {
+        position: absolute;
+        right: 5%;
+        top: 42vh;
+        height: 24vh;
+        width: 47%;
+        border-radius: 1.3em;
+    }
+
+    .card-ovelar a {
+        position: absolute;
+        top: 65%;
+        left: 14.5%;
+        width: 25%;
+    }
+
+    .card-ovelar img {
+        width: 60%;
+        border: 1px solid whitesmoke;
+        border-radius: 15px;
+    }
+
+    .card-ovelar img:hover {
+        width: 31%;
+        border-color: aquamarine;
+
+    }
+
+    .card-ovelar p {
+        padding-bottom: 2em;
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        font-size: 1.8em;
+    }
+
+
+
+
+
+
+
+
+    .botonarriba a {
+        left: 85%;
+        font-size: 2.4em;
+        width: 9%;
+
+    }
+
+}
+
+/*full dispositivos moviles*/
+@media screen and (max-width:640px) {
+    header {
+        height: 15vh;
+    }
+
+    .enlaces-redes {
+        top: 33%;
+    }
+
+    /*inicio*/
+    .textointro {
+        font-size: 2.6em;
+    }
+
+    .principal p {
+        font-size: 1.8em;
+    }
+
+    /*tarjetas */
+
+    .titulocaazapa {
+        left: 102%;
+    }
+
+    .titulocaaguazu {
+        left: 70%;
+    }
+
+    /*acerca de mi */
+    .sobremifoto {
+        top: 18%;
+    }
+
+    .p1 {
+        top: 43%;
+    }
+
+    .p2 {
+        top: 54%;
+    }
+
+    .p3 {
+        top: 70%;
+    }
+
+    .sobremi p {
+        font-size: 1.1em;
+    }
+
+    .excelencia p {
+        top: 80%;
+    }
+
+    /*tarjetas contacto */
+    .contacto_locales img {
+        width: 60px;
+    }
+
+    .contacto_locales li {
+        height: 131px;
+    }
+
+    .scroll-left-button {
+        top: 42%;
+    }
+
+    .scroll-right-button {
+        top: 42%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    /*menu*/
+    header {
+        height: 11vh;
+        z-index: 50;
+    }
+
+    .menu-icon {
+        top: 2.8%;
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+    }
+
+    /*inicio*/
+    .textointro {
+        font-size: 2em;
+    }
+
+    .principal p {
+        font-size: 1.4em;
+    }
+
+    /*servicios*/
+    .textoservicio {
+        font-size: 1.6em;
+    }
+
+    .vpresentacion {
+        width: 90%;
+    }
+
+    .caja-servicios {
+        line-height: 1.4em;
+    }
+
+    .caja-servicios p {
+        font-size: 1.2em;
+    }
+
+    /*acerca de mi */
+    .sobremi p {
+        font-size: 1em;
+    }
+
+    /*contacto*/
+    .titulo-padre {
+        font-size: 2.8em;
+    }
+
+    .testimonios h2 {
+        font-size: 1.8em;
+    }
+
+    /*caja sucursales */
+    .mapa-ovelar {
+        width: 58%;
+        height: 40%;
+        z-index: 20;
+
+    }
+
+    .card-ovelar a {
+        left: 6%;
+    }
+
+    .card-ovelar p {
+        left: 11.5%;
+    }
+
+    .caja-testimonios h4 {
+        font-size: 1em;
+    }
+
+    .contacto_locales {
+        height: 17vh;
+    }
+
+    .contacto_locales li {
+        width: 120px;
+        height: 105px;
+    }
+
+    .contacto_locales img {
+        width: 40px;
+    }
+
+    .scroll-left-button {
+        left: -5%;
+    }
+
+    .scroll-right-button {
+        right: -5%;
+    }
+
+    .scroll-left-button::before {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #25454f;
+    }
+
+    .scroll-right-button::before {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #25454f;
+    }
+
+    .scroll-right-button:hover::before {
+        border-bottom: 20px solid #415d99;
+    }
+
+    .scroll-left-button:hover::before {
+        border-bottom: 20px solid #415d99;
+    }
+
+    .botonarriba {
+        top: 92%;
+    }
+
+    .botonarriba a {
+        height: auto;
+        width: 11%;
+    }
+
+    .piepagina {
+        font-size: 1.4em;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+
+    /*menu*/
+    header {
+        height: 12vh;
+    }
+
+    .menu-icon {
+        top: 3%;
+    }
+
+    .enlaces-redes {
+        top: 37%;
+    }
+
+    .logo {
+        width: 21%;
+    }
+
+    .bar {
+        width: 30px;
+    }
+
+    .textointro {
+        font-size: 1.8em;
+    }
+
+    .principal p {
+        font-size: 1.2em;
+    }
+
+    /*servicios*/
+    .caja-servicios h4 {
+        font-size: 1em;
+    }
+
+    .caja-servicios {
+        width: 90%;
+
+        line-height: 1.3em;
+    }
+
+    /*acerca de mi*/
+    .sobremi p {
+        font-size: 0.9em;
+    }
+
+    .sobremifoto {
+        top: 16%;
+        width: 40%;
+    }
+
+    .excelencia p {
+        top: 78%;
+    }
+
+    /*testimonios */
+    .testimonios h2 {
+        font-size: 1.5em;
+        top: 2%;
+    }
+
+    .videos-testimonios {
+        height: 50%;
+    }
+
+    .vd-t {
+        width: 58%;
+    }
+
+    .contenedor-testimonios {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px dashed #1870ad;
+        border-radius: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-testimonios {
+        width: 85%;
+        font-size: 0.8em;
+    }
+
+
+    .contacto_locales ul {
+        height: 110%;
+    }
+
+    .contacto_locales li {
+        width: 100px;
+        height: 80px;
+    }
+
+    .contacto_locales img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1%;
+        width: 35px;
+    }
+
+    .contacto_locales p {
+        font-size: 1.5em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        width: 100%;
+    }
+    .botonarriba a {
+        width:12%;
+    }
+}
+
+@media screen and (max-width:412px) {
+    header {
+        height: 11vh;
+    }
+
+    .sobremi h2 {
+        text-shadow: none;
+    }
+
+    .testimonios h2 {
+        top: 5%;
+        font-size: 1.5em;
+        text-shadow: none;
+    }
+
+    .videos-testimonios {
+        width: 60%;
+        height: 45%;
+        top: 13%;
+        border: 2px dashed #1870ad;
+    }
+
+    .vd-t {
+        width: 85%;
+    }
+
+    .contenedor-testimonios {
+        width: 60%;
+    }
+
+    .caja-testimonios {
+        width: 100%;
+    }
+
+    .contacto h2 {
+        text-shadow: none;
+    }
+
+    /*recuadro de los contactos*/
+    .card-ovelar {
+        display: block;
+        position: absolute;
+        width: 100%;
+        border: 1px solid #415d99;
+        border-radius: 2.5em;
+        height: 74%;
+        z-index: 99;
+        transform: scale(0);
+        transition: transform 0.5s ease;
+    }
+
+    .card-ovelar h1 {
+        color: whitesmoke;
+        font-size: 3em;
+        position: absolute;
+        margin: 0 auto;
+        width: 99%;
+        top: 3%;
+    }
+
+    .card-ovelar h6 {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        font-size: 1.9em;
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    .card-ovelar h3 {
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 1.9em;
+        width: 20%;
+    }
+
+    .card-ovelar h4 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        font-size: 1.9em;
+        text-align: center;
+        width: 90%;
+    }
+
+    .mapa-ovelar {
+        position: absolute;
+        right: 5%;
+        top: 29vh;
+        height: 24vh;
+        width: 90%;
+        border-radius: 1.3em;
+    }
+
+    .card-ovelar a {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+
+    .card-ovelar img {
+        width: 40%;
+        border: 1px solid whitesmoke;
+        border-radius: 15px;
+
+    }
+
+    .card-ovelar img:hover {
+        width: 31%;
+        border-color: aquamarine;
+
+    }
+
+    .card-ovelar p {
+        padding-bottom: 2em;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8em;
+    }
+
+
+    .piepagina {
+        font-size: 1em;
+    }
+
+    .botonarriba {
+        top: 93%;
+    }
+
+    .botonarriba a {
+        font-size: 2em;
+    }
+    #toggleComments {
+        font-size: 0.9em;
+    }
+
+
+}
+
+@media screen and (max-width:395px) {
+    .logo {
+        width: 21%;
+    }
+
+    .enlaces-redes {
+        left: 5%;
+    }
+
+    .menu-icon {
+        top: 2.5%;
+        right: 2%;
+    }
+
+    .bar {
+        height: 4px;
+    }
+
+    .menu a {
+        font-size: 1em;
+    }
+
+    .sobremifoto {
+        top: 13%;
+    }
+
+    .p1 {
+        top: 35%;
+    }
+
+    .p2 {
+        top: 46%;
+    }
+
+    .p3 {
+        top: 62%;
+    }
+
+    .excelencia p {
+        top: 70%;
+    }
+
+    .mapa {
+        height: 20vh;
+    }
+
+    .contacto_locales ul {
+        width: 360%;
+    }
+
+    .titulooviedo {
+        left: 33%;
+    }
+
+    .titulocaazapa {
+        left: 118%;
+    }
+
+    .titulocaaguazu {
+        left: 96%;
+    }
+
+    .titulovilla {
+        left: 282%;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    /*principal*/
+    header {
+        height: 11vh;
+    }
+
+    .menu-icon {
+        top: 3%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .vpresentacion {
+        width: 75%;
+    }
+
+    .textointro {
+        font-size: 1.5em;
+    }
+
+    .principal p {
+        top: 63%;
+        font-size: 1.1em;
+    }
+
+    /*servicios*/
+    .textoservicio {
+        font-size: 1.1em;
+    }
+
+    .caja-servicios-padre {
+        top: 19%;
+        width: 100%;
+    }
+
+    .caja-servicios p {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+
+    /*sobre mi */
+    .sobremi {
+        font-size: 0.9em;
+    }
+
+    .sobremifoto {
+        width: 37%;
+    }
+/*comentarios*/
+
+
+    /*testimonios*/
+
+    .testimonios h2 {
+        top: 5%;
+        font-size: 1.3em;
+    }
+
+    .videos-testimonios {
+        border: 2px dashed #0F3052;
+        height: 45vh;
+        top: 13%;
+    }
+
+    .contenedor-testimonios {
+        width: 85%;
+    }
+
+    .card-ovelar p {
+        top: 88%;
+    }
+
+    .contacto_locales ul {
+        height: 105%;
+    }
+
+    .titulooviedo {
+        left: 35%;
+    }
+
+    .titulocaazapa {
+        left: 122%;
+    }
+
+    .titulocaaguazu {
+        left: 96%;
+    }
+
+    .titulovilla {
+        left: 280%;
+    }
+
+    .botonarriba a {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width:328px) {
+
+    /*inicio*/
+    header {
+        height: 15vh;
+    }
+
+    .bar {
+        height: 3px;
+        width: 24px;
+    }
+
+    .enlaces-redes {
+        width: 95%;
+        left: 2%;
+    }
+
+    .menu-icon {
+        top: 3%;
+        right: 7%;
+        width: 8%;
+    }
+
+    .textointro {
+        top: 46%;
+        font-size: 1em;
+    }
+
+    .principal p {
+        top: 60%;
+        font-size: 0.9em;
+    }
+
+    /*servicios*/
+    .servicios {
+        font-size: 0.9em;
+    }
+
+    .textoservicio {
+        width: 98%;
+    }
+
+    .servicios h4 {
+        width: 80%;
+    }
+
+    .caja-servicios-padre {
+
+        width: 90%;
+        height: 73vh;
+        overflow-y: auto;
+        top: 23%;
+    }
+
+    /*sobre mi*/
+    .sobremi {
+        font-size: 0.6em;
+
+    }
+
+    .sobremifoto {
+        top: 15%;
+        width: 30%;
+    }
+
+    .p1 {
+        overflow-y: auto;
+        top: 38%;
+    }
+
+    .p2 {
+        top: 50%;
+        overflow-y: auto;
+    }
+
+    .p3 {
+        overflow-y: auto;
+        top: 64%;
+    }
+
+    .excelencia p {
+        overflow-y: auto;
+    }
+
+    .videos-testimonios {
+        width: 90%;
+    }
+
+    .vd-t {
+        width: 52%;
+    }
+
+    .contenedor-testimonios {
+        width: 90%;
+    }
+
+    .caja-testimonios {
+        width: 80%;
+    }
+
+    /*testimonios */
+    .testimonios h2 {
+        font-size: 1em;
+    }
+/*comentarios*/
+
+    /*contacto*/
+    .contacto_locales {
+        height: 100%;
+    }
+
+    .contacto_locales ul {
+        width: 380%;
+    }
+
+    .scroll-left-button {
+        top: 33%;
+        left: -8%;
+    }
+
+    .scroll-right-button {
+        top: 33%;
+        right: -8%;
+
+    }
+
+    .card-ovelar p {
+        top: 88%;
+    }
+
+    .titulooviedo {
+        left: 35%;
+    }
+
+    .titulocaazapa {
+        left: 130%;
+    }
+
+    .titulocaaguazu {
+        left: 105%;
+    }
+
+    .titulovilla {
+        left: 290%;
+    }
+
+    .botonarriba {
+        top: 91%;
+    }
+
+    .botonarriba a {
+        width: 13%;
+    }
+
+    .mapa-ovelar {
+        top: 43%;
+    }
+}

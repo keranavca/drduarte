@@ -1,0 +1,917 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    color: #253f5b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-position: 0%;
+    background-size: auto;
+    background-image: linear-gradient(rgba(240, 240, 241, 0.6), rgba(240, 240, 241, 0.6)), url("../img/fondoblanco.webp");
+
+
+}
+
+header {
+    background-color: #f1f1f2;
+    position: sticky;
+    width: 85%;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 5px 5px 4px #cfcfd0;
+    z-index: 1;
+    padding-top: 1%;
+    top: 0%;
+}
+
+header img {
+    width: 3%;
+    top: 8%;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px #f1f1f2;
+
+
+}
+
+header img:hover {
+    width: 3.5%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px #f1f1f2;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+
+
+}
+
+#subtitulo {
+
+    font-size: 1.8em;
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    background-color: #f1f1f2;
+    box-shadow: 5px 5px 4px #cfcfd0;
+
+    text-indent: 5%;
+}
+
+.share-redes {
+    position: fixed;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    flex-direction: column;
+    z-index: 115;
+    border-radius: 0.8em;
+}
+
+.share-redes img:hover {
+    width: 3.2em;
+    transition: 0.2s ease-out;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f1f1f2;
+    box-shadow: 5px 5px 4px #cfcfd0;
+
+
+}
+
+section h2 {
+
+    text-align: center;
+    font-size: 2.5em;
+}
+
+section p {
+    text-indent: 5%;
+    text-align: left;
+    width: 55%;
+    padding-left: 5%;
+    padding-top: 1%;
+    line-height: 1.4em;
+    font-size: 1.9em;
+}
+
+.definicion img {
+    position: absolute;
+    right: 12%;
+    top: 17%;
+    width: 30%;
+    height: 60%;
+    border-radius: 1.3em;
+    box-shadow: 5px 5px 15px #cfcfd0;
+}
+
+.causa img {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    height: 60%;
+    width: 35%;
+    border-radius: 1.3em;
+    box-shadow: 5px 5px 15px #cfcfd0;
+}
+
+.pcausa {
+    position: relative;
+    left: 40%;
+}
+
+.tipos p {
+    width: 100%;
+}
+
+.tipos img {
+    margin: 0 auto;
+
+    width: 25%;
+    border-radius: 1.3em;
+
+}
+
+.impactos img {
+    position: absolute;
+    right: 12%;
+    top: 19%;
+    width: 30%;
+    height: 70%;
+    border-radius: 1.3em;
+    box-shadow: 5px 5px 15px #cfcfd0;
+}
+
+.reflexion img {
+    position: absolute;
+    right: 10%;
+    top: 19%;
+    width: 33%;
+    height: 60%;
+    border-radius: 1.3em;
+    box-shadow: 5px 5px 15px #cfcfd0;
+}
+
+.conclu p {
+    width: 100%;
+}
+
+.conclu img {
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 1.3em;
+}
+
+.piepagina {
+    color: #253f5b;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background-color: #f1f1f2;
+    border: 1px solid #cfcfd0;
+}
+.piepagina a{
+    padding: 2%;
+
+}
+
+@media screen and (max-width:1367px) {
+
+    header img {
+        width: 5%;
+    }
+
+    header img:hover {
+        width: 5.2%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #subtitulo {
+        font-size: 1.4em;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    section h2 {
+
+        font-size: 1.8em;
+    }
+
+    section p {
+        text-indent: 8%;
+        font-size: 1.4em;
+    }
+
+    .definicion img {
+        position: absolute;
+        right: 3%;
+        top: 17%;
+        width: 40%;
+        height: 60%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        height: 60%;
+        width: 35%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+
+    header img {
+        width: 5.2%;
+    }
+
+    header img:hover {
+        width: 5.4%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #subtitulo {
+        font-size: 1.4em;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    section h2 {
+
+        font-size: 1.8em;
+    }
+
+    section p {
+        text-indent: 8%;
+        font-size: 1.4em;
+    }
+
+    .definicion img {
+        position: absolute;
+        right: 3%;
+        top: 17%;
+        width: 40%;
+        height: 60%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        height: 60%;
+        width: 35%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        width: 100%;
+        height: 21vh;
+    }
+
+    header img {
+        width: 4%;
+        top: 3%;
+        position: absolute;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px #f1f1f2;
+
+
+    }
+
+    header img:hover {
+        width: 4.2%;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px #f1f1f2;
+        cursor: pointer;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+
+
+    }
+
+    #subtitulo {
+
+        font-size: 1em;
+        width: 80%;
+        padding: 2%;
+        margin: 0 auto;
+        background-color: #f1f1f2;
+        box-shadow: 5px 5px 4px #cfcfd0;
+
+        text-indent: 5%;
+    }
+
+    .share-redes img {
+    width: 2em;
+   
+    }        
+
+    section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10%;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #f1f1f2;
+        box-shadow: 5px 5px 4px #cfcfd0;
+
+
+    }
+
+    section h2 {
+
+        text-align: center;
+        font-size: 2em;
+    }
+
+    section p {
+        text-indent: 5%;
+        text-align: left;
+        width: 55%;
+        padding-left: 5%;
+        padding-top: 1%;
+        line-height: 1.4em;
+        font-size: 1.2em;
+    }
+
+    .definicion img {
+        position: absolute;
+        right: 3%;
+        top: 17%;
+        width: 40%;
+        height: 60%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 3%;
+        top: 20%;
+        height: 60%;
+        width: 40%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .tipos img {
+        margin: 0 auto;
+
+        width: 25%;
+        border-radius: 1.3em;
+
+    }
+
+    .impactos img {
+        position: absolute;
+        right: 3%;
+        top: 19%;
+        width: 40%;
+        height: 70%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .reflexion img {
+        position: absolute;
+        right: 5%;
+        top: 19%;
+        width: 40%;
+        height: 60%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .conclu p {
+        width: 100%;
+    }
+
+    .conclu img {
+        width: 50%;
+        height: 40%;
+        margin: 0 auto;
+        border-radius: 1.3em;
+    }
+
+    .piepagina {
+        color: #253f5b;
+        text-align: center;
+        font-size: 1.5vw;
+        padding: 1vw;
+        background-color: #f1f1f2;
+        border: 1px solid #cfcfd0;
+
+    }
+}
+
+
+@media screen and (max-width:720px) {
+    header {
+        width: 100%;
+        height: 13vh;
+    }
+
+    header img {
+        width: 6%;
+    }
+
+    header img:hover {
+        width: 6.2%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #subtitulo {
+        font-size: 1.1em;
+        width: 95%;
+    }
+
+    .share-redes {
+        flex-direction: row;
+        left: 46%;
+        justify-content: center;
+        transform: translateX(-50%);
+        top: 93%;
+        height: 8vh;
+        padding: 1%;
+        
+      
+
+    }
+    .share-redes a {
+        text-align: center;
+        width:6%;
+        display:inline-block;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+
+    .share-redes img{
+        width:195%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .share-redes img:hover{
+        width: none;
+        animation: none;
+        transition: none;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    section h2 {
+
+        font-size: 1.7em;
+    }
+
+    section p {
+        text-indent: 8%;
+        font-size: 1em;
+        width: 55%;
+    }
+
+    .definicion img {
+        position: absolute;
+        right: 3%;
+        top: 17%;
+        width: 40%;
+        height: 60%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        height: 60%;
+        width: 35%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .impactos img {
+        width: 42%;
+        right: 2%
+    }
+
+    .tiposimg2 {
+        visibility: hidden;
+    }
+
+    .tipos img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    header {
+        width: 100%;
+        height: 12vh;
+    }
+
+    header img {
+        width: 8%;
+    }
+
+    header img:hover {
+        width: 8.2%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #subtitulo {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section h2 {
+
+        font-size: 1.5em;
+        height: 60vh;
+    }
+
+    section p {
+        position: absolute;
+        top: 40%;
+        text-indent: 8%;
+        font-size: 1em;
+        width: 100%;
+        height: 45vh;
+    }
+
+    .definicion h2 {
+        font-size: 1.1em;
+    }
+
+    .definicion img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        width: 50%;
+        height: 30%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .definicion p {
+        overflow-y: auto;
+        height: 50%;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12%;
+        height: 25%;
+        width: 50%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa h2 {
+        font-size: 1.1em;
+    }
+
+    .causa p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 38%;
+        height: 55%;
+        overflow-x: scroll;
+    }
+
+    .impactos h2 {
+        font-size: 1.2em;
+    }
+
+    .impactos img {
+        width: 40%;
+        top: 14%;
+        height: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .impactos p {
+        top: 48%;
+        overflow-y: auto;
+        height: 43%;
+    }
+
+    .tipos img {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        border: 2px solid red;
+        transform: translateX(-50%);
+    }
+
+    .tipos p {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
+        height: 30vh;
+    }
+
+
+
+    .tipos img {
+        width: 50%;
+    }
+
+    .reflexion img {
+        width: 60%;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 25vh;
+
+    }
+
+    .reflexion h2 {
+        font-size: 1.1em;
+    }
+
+    .reflexion p {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translateX(-50%);
+        height: 44%;
+        width: 90%;
+        overflow-x: auto;
+    }
+
+    .conclu h2 {
+        font-size: 1em;
+    }
+
+    .conclu img {
+        position: absolute;
+        top: 10%;
+        width: 90%;
+        height: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .conclu p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
+    }
+
+    .piepagina {
+        padding-bottom: 1.8vh;
+
+        font-size: 1em;
+    }
+
+    .piepagina a {
+        color: #253f5b
+    }
+}
+@media screen and (max-width:376px){
+    header {
+      font-size:0.9em;
+    }
+}
+
+@media screen and (max-width:328px) {
+    header {
+        width: 100%;
+        height: 14vh;
+    }
+
+    header img {
+        width: 8%;
+    }
+
+    header img:hover {
+        width: 8.2%;
+    }
+
+    h1 {
+        font-size: 0.9em;
+    }
+
+    #subtitulo {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section h2 {
+
+        font-size: 1.3em;
+        height: 60vh;
+    }
+
+    section p {
+        position: absolute;
+        top: 40%;
+        text-indent: 8%;
+        font-size: 1em;
+        width: 100%;
+        height: 45vh;
+    }
+
+    .definicion img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12%;
+        width: 50%;
+        height: 30%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .definicion p {
+        overflow-y: auto;
+        height: 50%;
+    }
+
+    .causa img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12%;
+        height: 25%;
+        width: 50%;
+        border-radius: 1.3em;
+        box-shadow: 5px 5px 15px #cfcfd0;
+    }
+
+    .causa p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 38%;
+        height: 55%;
+        overflow-x: scroll;
+    }
+
+    .impactos img {
+        width: 40%;
+        top: 14%;
+        height: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .impactos p {
+        top: 48%;
+        overflow-y: auto;
+        height: 43%;
+    }
+
+    .tipos img {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        border: 2px solid red;
+        transform: translateX(-50%);
+    }
+
+    .tipos p {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
+        height: 30vh;
+    }
+
+
+
+    .tipos img {
+        width: 50%;
+    }
+
+    .reflexion img {
+        width: 60%;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 25vh;
+
+    }
+
+    .reflexion h2 {
+        font-size: 1em;
+    }
+
+    .reflexion p {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translateX(-50%);
+        height: 45%;
+        width: 90%;
+        overflow-x: auto;
+    }
+
+    .conclu img {
+        position: absolute;
+        top: 10%;
+        width: 90%;
+        height: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .conclu h2 {
+        font-size: 0.9em;
+    }
+
+    .conclu p {
+        font-size: 0.9em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
+        height: 39vh;
+    }
+
+    .piepagina {
+        padding-bottom: 1.8vh;
+
+        font-size: 1em;
+    }
+
+    .piepagina a {
+        color: black;
+    }
+}
